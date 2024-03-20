@@ -1,5 +1,5 @@
 from behave import given, when, then
-from features.pages.my_account_page import MyAccountPage
+from pages.my_account_page import MyAccountPage
 
 
 @given(u'eu estou na pagina de Cadastro')
