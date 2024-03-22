@@ -1,5 +1,4 @@
 from selenium import webdriver
-from behave import fixture
 
 def before_scenario(context, scenario):
     print(scenario)

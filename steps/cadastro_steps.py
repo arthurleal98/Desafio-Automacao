@@ -24,3 +24,12 @@ def step_impl(context):
 def step_impl(context):
     assert "Hello" in context.driver.page_source
 
+@then(u'eu devo ver a mensagem de erro "Email já cadastrado"')
+def step_impl(context):
+    assert "Error: An account is already registered with your email address. Please log in." in context.driver.page_source
+
+
+@when(u'o usuário preenche o campo email com ""')
+def step_impl(context):
+    MyAccountPage(context.driver).inserir_email_reg("")
+    
